@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Evento - Comunidad XYZ</title>
+</head>
+<body>
+    <header>
+        <h1>Crear Evento</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="eventos-actuales.html">Eventos Actuales</a></li>
+            <li><a href="eventos-futuros.html">Eventos Futuros</a></li>
+            <li><a href="eventos-pasados.html">Eventos Pasados</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Formulario para Crear Evento</h2>
+        <form action="guardar_evento.php" method="post">
+            <label for="event-name">Nombre del Evento:</label>
+            <input type="text" id="event-name" name="event-name" required>
+
+            <label for="event-description">Descripción del Evento:</label>
+            <textarea id="event-description" name="event-description" required></textarea>
+
+            <label for="event-date">Fecha del Evento:</label>
+            <input type="date" id="event-date" name="event-date" required>
+
+            <button type="submit">Crear Evento</button>
+        </form>
+    </section>
+    <!-- Eventos existentes y futuros -->
+    <footer>
+        <p>&copy; 2023 Comunidad XYZ</p>
+    </footer>
+</body>
+</html>
